@@ -10,6 +10,49 @@
         
         body{
             background:url(bg-pattern.jpg);
+            margin:0;
+            padding:0;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:70px;
+            background-color: #598059;
+        }
+
+        nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+            font-size: 1.5rem;
+            display: block;
+            padding:0px 20px;
+            line-height:70px;
+        }
+
+        .menu-icon{
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #menu-toggle{
+            display: none;
+        }
+
+        .active{
+            background-color: #212529;
+        }
+
+        nav ul li a:hover{
+            background-color: #212529;
         }
 
         h1{
@@ -79,6 +122,34 @@
         }
 
         @media(max-width:768px){
+            nav{
+                justify-content: flex-end;
+                padding:10px 20px;
+                height:auto;
+            }
+
+            nav ul li a{
+                padding:10px;
+                line-height: normal;
+            }
+
+            nav ul{
+                display: none;
+                flex-direction: column;
+                width:100%;
+                background-color: #333;
+            }
+
+            .menu-icon{
+                display: block;
+                margin-right:50px;
+            }
+
+            #menu-toggle:checked + .menu-icon + ul {
+                display: flex;
+                
+            }
+
             .footer{
                 max-width: 400px;
             }
@@ -88,127 +159,137 @@
             .footer{
                 max-width: 280px;
             }
-
+        }
     </style>
     <script async defer src="https://cdn-online.flowpaper.com/zine/3.8.5/js/embed.min.js"></script>
 </head>
 <body>
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul>
+            <li><a href="index.html" class="active">روحانی خزائن</a></li>
+            <li><a href="malfoozat.html">ملفوظات</a></li>
+            <li><a href="maktoobat.html">مکتوبات</a></li>
+            <li><a href="ishtaharat.html">مجموعہ اشتہارات</a></li>
+            </ul>
+        </nav>
     <h1>روحانی خزائن کتب - حضرت میرزا غلام احمد قادیانی علیہ السلام مسیح موعود و امام مہدی</h1>
     <div class="container">
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 1</p>
         <img src="rk1.jpg" width="150" height="200">
-        <a href="https://8c1107fc-trial.flowpaper.com/RuhaniKhazainVol01/" data-fp-width="400px" data-fp-height="300px" style="max-width: 100%" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-01.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 2</p>
         <img src="rk2.jpg" width="150" height="200">
-        <a href="https://8c1107fc-trial.flowpaper.com/RuhaniKhazainVol02/" data-fp-width="400px" data-fp-height="300px" style="max-width: 100%" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-02.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 3</p>
         <img src="rk3.jpg" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-3/books/rk-fateh-islam?page=42" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-03.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 4</p>
         <img src="rk4.jpg" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-4/books/rk-al-haq-ludhiana?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-04.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 5</p>
         <img src="rk5.jpg" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-5/books/rk-aina-kamalat-islam?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-05.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 6</p>
         <img src="rk6.jpg" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-6/books/rk-barakat-uddua?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-06.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 7</p>
         <img src="rk7.jpg" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-7/books/rk-tuhfa-bughdad?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-07.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 8</p>
         <img src="rk8.jpg" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-8/books/rk-nur-ul-haq-part-1?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-08.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 9</p>
         <img src="rk9.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-9/books/rk-anwarul-islam?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-09.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 10</p>
         <img src="rk10.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-10/books/rk-ariya-dharam?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-10.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 11</p>
         <img src="rk11.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-11/books/rk-anjaam-aatham?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-11.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 12</p>
         <img src="rk12.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-12/books/rk-siraj-e-munir?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-12.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 13</p>
         <img src="rk13.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-13/books/rk-kitab-ul-bariyyah?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-13.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 14</p>
         <img src="rk14.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-14/books/rk-najm-ul-huda?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-14.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 15</p>
         <img src="rk15.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-15/books/rk-maseeh-hindustan-mein?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-15.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 16</p>
         <img src="rk16.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-16/books/rk-khutba-ilhamia?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-16.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 17</p>
         <img src="rk17.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-17/books/rk-government-angrezi-aur-jihad?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-17.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 18</p>
         <img src="rk18.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-18/books/rk-ijazul-masih?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-18.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 19</p>
         <img src="rk19.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-19/books/rk-kashti-nooh?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-19.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 20</p>
         <img src="rk20.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-20/books/rk-tadhkirat-ush-shahadatain?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-20.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 21</p>
         <img src="rk21.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-21/books/rk-braheen-ahmadiyya-vol-5?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-21.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 22</p>
         <img src="rk22.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-22/books/rk-haqiqat-ul-wahi?page=26" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-22.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
     <div class="book-div">
         <p class="book-name">روحانی خزائن جلد 23</p>
         <img src="rk23.png" width="150" height="200">
-        <a href="https://new.alislam.org/library/rk/volumes/ruhani-khazain-volume-23/books/rk-chashma-marafat?page=0" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
+        <a href="Ruhani-Khazain-Vol-23.pdf" target="_blank"><button class="read-btn" type="button">پڑھیں</button></a>
     </div>
 </div>
 <div class="footer">
